@@ -18,7 +18,9 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <h1 className="text-3xl underline text-red-300">Hello world!</h1>
+        <h1 className="text-3xl underline text-red-300">
+          Starting Crowd meter project
+        </h1>
       </div>
     </>
   );
