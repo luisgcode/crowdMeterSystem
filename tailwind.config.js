@@ -13,9 +13,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        brightRed: "hsl(12,88%,59%)",
-        brightRedLight: "hsl(12,88%,69%)",
-        brightRedSuplight: "hsl(12,88%,95%)",
+        darkBG: "#0a0519",
+        titleColor: "#ec672d",
+        barColor: "#cc932e(12,88%,95%)",
+        whiteColor: "#fffbee",
       },
     },
   },
