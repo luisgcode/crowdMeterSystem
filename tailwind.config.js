@@ -18,6 +18,9 @@ module.exports = {
         barColor: "#cc932e(12,88%,95%)",
         whiteColor: "#fffbee",
       },
+      width: {
+        custom: "1360px",
+      },
     },
   },
   plugins: [],
