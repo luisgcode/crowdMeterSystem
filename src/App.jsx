@@ -7,7 +7,7 @@ function App() {
   return (
     // Main div
     <>
-      <div className="card">Hello there</div>
+      <div className="card">Hello there, testing Github</div>
     </>
   );
 }
