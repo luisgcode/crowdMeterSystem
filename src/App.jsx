@@ -7,7 +7,7 @@ function App() {
   return (
     // Main div
     <>
-      <div className="card"></div>
+      <div className="card">sdf</div>
     </>
   );
 }
