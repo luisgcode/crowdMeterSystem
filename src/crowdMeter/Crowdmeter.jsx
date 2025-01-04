@@ -1,7 +1,14 @@
 import React from "react";
 import "./Crowdmeter.css";
+import Hours from "./components/Hours";
+import Schedulehours from "./data/Schedulehours";
 
 const Crowdmeter = () => {
+  // Hours from data hours
+  const hours = Schedulehours.map(function (item) {
+    return <Hours day={item.day} hours={item.hours} />;
+  });
+
   return (
     <div className="flex justify-center items-center   ">
       <div className="max-w-[1000px] text-center   ">
@@ -11,17 +18,12 @@ const Crowdmeter = () => {
           </h1>
           <p>Check hours and days to find the best moment for you!</p>
         </div>
-        <div className="schedule-content flex gap-10  ">
-          <div className="hours w-[300px]">
+        <div className="schedule-content flex gap-28 ">
+          <div className="hours">
             <h2 className="font-bold uppercase mb-10">hours</h2>
-            <div className="hours-block flex flex-col gap-1 text-left  ">
-              <span>Monday: 5:00 AM - 12:00 AM</span>
-              <span>Tuesday: 24 HRS</span>
-              <span>Wednesday: 24 HRS</span>
-              <span>Thursday: 5:00 AM - 12:00 AM</span>
-              <span>Friday: 7:00 AM - 09:00 PM</span>
-              <span>Saturday: 5:00 AM - 12:00</span>
-              <span>Sunday: 5:00 AM - 12:00</span>
+            <div className="hours-block flex flex-col gap-2 text-left">
+              {/* Printing hours from data */}
+              {hours}
             </div>
           </div>
           <div className="crowd w-[700px]">
