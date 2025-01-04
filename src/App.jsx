@@ -1,13 +1,15 @@
 import { useState } from "react";
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
+// Elements
+import Crowdmeter from "./crowdMeter/Crowdmeter";
 
+function App() {
   return (
-    // Main div
     <>
-      <div className="card">Hello there, testing Github</div>
+      <div className="App">
+        <Crowdmeter />
+      </div>
     </>
   );
 }
