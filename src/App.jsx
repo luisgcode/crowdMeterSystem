@@ -5,11 +5,9 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
+    // Main div
     <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <h1 className="text-3xl text-red-300">Starting Crowd meter project</h1>
-      </div>
+      <div className="card"></div>
     </>
   );
 }
