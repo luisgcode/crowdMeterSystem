@@ -3,7 +3,7 @@ import "./Crowdmeter.css";
 
 const Crowdmeter = () => {
   return (
-    <div className="flex justify-center items-center h-screen w-screen">
+    <div className="flex justify-center items-center   ">
       <div className="max-w-[1000px] text-center   ">
         <div className="schedule-header mb-20">
           <h1 className="text-titleColor uppercase font-bold">
