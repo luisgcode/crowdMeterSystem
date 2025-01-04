@@ -1,6 +1,11 @@
 # Crowd Meter
 
+## Design Idea
+
+![alt text](image.png)
+
 ## Description
+
 The project aims to develop an Occupancy Meter system that visualizes occupancy trends in a high-traffic location (e.g., a gym). The application will display hourly occupancy levels for each day of the week, represented as vertical bars in a graph. These bars will indicate the percentage of occupancy with color coding: green (low occupancy), yellow (medium occupancy), and red (high occupancy).
 
 While the data is simulated to mimic real-world occupancy tracking, users will manually control the data via a RESTful API. This allows for a prototype demonstration of how such a system could work with live data in a future iteration.
