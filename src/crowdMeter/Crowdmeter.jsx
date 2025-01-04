@@ -54,14 +54,14 @@ const Crowdmeter = () => {
                 <span
                   className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
                   style={{
-                    height: "90%", // Establece la altura que deseas
+                    height: "35%", // Establece la altura que deseas
                     transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
                   }}
                 ></span>
                 <span
                   className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
                   style={{
-                    height: "90%", // Establece la altura que deseas
+                    height: "30%", // Establece la altura que deseas
                     transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
                   }}
                 ></span>
@@ -187,21 +187,21 @@ const Crowdmeter = () => {
                 <span
                   className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
                   style={{
-                    height: "50%", // Establece la altura que deseas
+                    height: "20%", // Establece la altura que deseas
                     transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
                   }}
                 ></span>
                 <span
                   className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
                   style={{
-                    height: "30%", // Establece la altura que deseas
+                    height: "10%", // Establece la altura que deseas
                     transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
                   }}
                 ></span>
                 <span
                   className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
                   style={{
-                    height: "90%", // Establece la altura que deseas
+                    height: "20%", // Establece la altura que deseas
                     transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
                   }}
                 ></span>
