@@ -36,31 +36,175 @@ const Crowdmeter = () => {
                 <span className="day-tab">SAT</span>
                 <span className="day-tab">SUN</span>
               </div>
-              <div className="crowd-block-medium h-60 pt-5 pb-2 border-b-2 border-dashed border-titleColor flex justify-around">
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
-                <span className="bar-tab bg-gradient-to-t from-white to-titleColor h-full w-8 rounded-t-lg rounded-b-md"></span>
+              <div className="crowd-block-medium h-60 pt-5 pb-2 border-b-2 border-dashed border-titleColor flex justify-around items-end">
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "60%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "90%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "90%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "90%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "90%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "40%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "50%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "90%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "90%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "90%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "90%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "90%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "80%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "30%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "80%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "70%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "30%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "80%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "70%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "10%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "20%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "50%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "30%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
+                <span
+                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+                  style={{
+                    height: "90%", // Establece la altura que deseas
+                    transformOrigin: "bottom", // Cambia el punto de origen a la parte inferior
+                  }}
+                ></span>
               </div>
               <div className="crowd-block-bottom w-full flex justify-around">
                 <span className="hour-tab">6AM</span>
@@ -74,7 +218,8 @@ const Crowdmeter = () => {
               </div>
             </div>
             <span className="text-yellow-300 text-sm tracking-widest text-left block mt-5">
-              * Info Collected from the last 30 days
+              * Info Collected from the last 30 days, based in our maximum
+              capacity.
             </span>
           </div>
         </div>
