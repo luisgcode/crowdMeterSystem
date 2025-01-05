@@ -1,10 +1,10 @@
 export default {
   monday: [
-    { hour: 5, ocu_percen: 96 },
-    { hour: 6, ocu_percen: 5 },
+    { hour: 5, ocu_percen: 26 },
+    { hour: 6, ocu_percen: 89 },
     { hour: 7, ocu_percen: 63 },
-    { hour: 8, ocu_percen: 27 },
-    { hour: 9, ocu_percen: 27 },
+    { hour: 8, ocu_percen: 77 },
+    { hour: 9, ocu_percen: 97 },
     { hour: 10, ocu_percen: 73 },
     { hour: 11, ocu_percen: 49 },
     { hour: 12, ocu_percen: 43 },
@@ -22,8 +22,8 @@ export default {
     { hour: 0, ocu_percen: 50 },
     { hour: 1, ocu_percen: 30 },
     { hour: 2, ocu_percen: 20 },
-    { hour: 3, ocu_percen: 70 },
-    { hour: 4, ocu_percen: 70 },
+    { hour: 3, ocu_percen: 10 },
+    { hour: 4, ocu_percen: 20 },
   ],
   tuesday: [
     { hour: 5, ocu_percen: 25 },

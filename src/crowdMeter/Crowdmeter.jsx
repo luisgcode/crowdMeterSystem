@@ -2,6 +2,7 @@ import React from "react";
 import "./Crowdmeter.css";
 import Hours from "./components/Hours";
 import Schedulehours from "./data/Schedulehours";
+import Percentage from "./components/Percentage";
 import Percentagedaily from "./data/Percentagedaily";
 
 const Crowdmeter = () => {
@@ -10,15 +11,9 @@ const Crowdmeter = () => {
     return <Hours day={item.day} hours={item.hours} />;
   });
 
-  // Percentages from data Percentagedaily for Monday
+  // Percentage from data hours
   const percentages = Percentagedaily.monday.map((item, index) => (
-    <span
-      key={index}
-      className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-      style={{
-        height: `${item.ocu_percen}%`,
-      }}
-    ></span>
+    <Percentage key={index} height={item.ocu_percen} />
   ));
 
   return (
