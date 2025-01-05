@@ -2,7 +2,7 @@ import React from "react";
 import "./Crowdmeter.css";
 import Hours from "./components/Hours";
 import Schedulehours from "./data/Schedulehours";
-
+7;
 const Crowdmeter = () => {
   // Hours from data hours
   const hours = Schedulehours.map(function (item) {
@@ -30,7 +30,7 @@ const Crowdmeter = () => {
             <h2 className="font-bold uppercase mb-10">daily crowd</h2>
             <div className="crowd-block">
               <div className="crowd-block-top w-full flex justify-around border-b-2 border-titleColor pb-3">
-                <span className="day-tab day-active">MON</span>
+                <span className="day-tab">MON</span>
                 <span className="day-tab">TUE</span>
                 <span className="day-tab">WED</span>
                 <span className="day-tab">THU</span>
