@@ -2,12 +2,24 @@ import React from "react";
 import "./Crowdmeter.css";
 import Hours from "./components/Hours";
 import Schedulehours from "./data/Schedulehours";
+import Percentagedaily from "./data/Percentagedaily";
 
 const Crowdmeter = () => {
   // Hours from data hours
   const hours = Schedulehours.map(function (item) {
     return <Hours day={item.day} hours={item.hours} />;
   });
+
+  // Percentages from data Percentagedaily for Monday
+  const percentages = Percentagedaily.monday.map((item, index) => (
+    <span
+      key={index}
+      className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+      style={{
+        height: `${item.ocu_percen}%`,
+      }}
+    ></span>
+  ));
 
   return (
     <div className="flex justify-center items-center   ">
@@ -39,174 +51,8 @@ const Crowdmeter = () => {
                 <span className="day-tab">SUN</span>
               </div>
               <div className="crowd-block-medium h-60 pt-5 pb-2 border-b-2 border-dashed border-titleColor flex justify-around items-end">
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "60%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "90%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "35%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "30%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "90%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "40%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "50%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "90%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "90%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "90%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "90%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "90%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "80%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "30%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "80%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "70%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "30%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "80%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "70%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "10%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "20%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "20%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "10%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
-                <span
-                  className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
-                  style={{
-                    height: "20%",
-                    transformOrigin: "bottom",
-                  }}
-                ></span>
+                {/* percentages daily from data */}
+                {percentages}
               </div>
               <div className="crowd-block-bottom w-full flex justify-around">
                 <span className="hour-tab">6AM</span>
