@@ -1,11 +1,10 @@
+// filepath: /C:/Users/luisg/OneDrive/Escritorio/programming 2025/crowd_meter_system/src/crowdMeter/Crowdmeter.jsx
 import React, { useState } from "react";
 import "./Crowdmeter.css";
 import Hours from "./components/Hours";
 import Schedulehours from "./data/Schedulehours";
-import Percentage from "./components/Percentage";
-import Percentagedaily from "./data/Percentagedaily";
 
-const Crowdmeter = () => {
+const Crowdmeter = ({ percentages, onUpdate }) => {
   // Estado para almacenar el día seleccionado
   const [selectedDay, setSelectedDay] = useState("monday");
 
@@ -15,25 +14,31 @@ const Crowdmeter = () => {
   };
 
   // Obtenemos los datos del día seleccionado
-  const percentages = Percentagedaily[selectedDay].map((item, index) => (
-    <Percentage key={index} hour={item.hour} height={item.ocu_percen} />
+  const percentageBars = percentages[selectedDay].map((item, index) => (
+    <span
+      key={index}
+      className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
+      style={{
+        height: `${item.ocu_percen}%`,
+      }}
+    ></span>
   ));
 
   // Hours from data hours
-  const hours = Schedulehours.map(function (item) {
-    return <Hours day={item.day} hours={item.hours} />;
-  });
+  const hours = Schedulehours.map((item) => (
+    <Hours key={item.day} day={item.day} hours={item.hours} />
+  ));
 
   return (
-    <div className="flex justify-center items-center   ">
-      <div className="max-w-[1000px] text-center   ">
+    <div className="flex justify-center items-center  w-full overflow-hidden">
+      <div className="max-w-[1000px] text-center">
         <div className="schedule-header mb-20">
           <h1 className="text-titleColor uppercase font-bold">
             Schedules & hours
           </h1>
           <p>Check hours and days to find the best moment for you!</p>
         </div>
-        <div className="schedule-content flex gap-28 ">
+        <div className="schedule-content flex gap-28">
           <div className="hours">
             <h2 className="font-bold uppercase mb-10">hours</h2>
             <div className="hours-block flex flex-col gap-2 text-left">
@@ -66,24 +71,9 @@ const Crowdmeter = () => {
                 ))}
               </div>
               <div className="crowd-block-medium h-60 pt-5 pb-2 border-b-2 border-dashed border-titleColor flex justify-around items-end">
-                {/* percentages daily from data */}
-                {percentages}
-              </div>
-              <div className="crowd-block-bottom w-full flex justify-around">
-                <span className="hour-tab">6AM</span>
-                <span className="hour-tab">9AM</span>
-                <span className="hour-tab">12PM</span>
-                <span className="hour-tab">3PM</span>
-                <span className="hour-tab">6PM</span>
-                <span className="hour-tab">9PM</span>
-                <span className="hour-tab">12AM</span>
-                <span className="hour-tab">3AM</span>
+                {percentageBars}
               </div>
             </div>
-            <span className="text-yellow-300 text-sm tracking-widest text-left block mt-5">
-              * Info Collected from the last 30 days, based in our maximum
-              capacity.
-            </span>
           </div>
         </div>
       </div>

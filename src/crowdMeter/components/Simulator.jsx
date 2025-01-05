@@ -1,7 +1,18 @@
-import React from "react";
+// filepath: /C:/Users/luisg/OneDrive/Escritorio/programming 2025/crowd_meter_system/src/crowdMeter/components/Simulator.jsx
+import React, { useState } from "react";
 import "./Simulator.css";
 
-const Simulator = () => {
+const Simulator = ({ onUpdate }) => {
+  const [selectedDay, setSelectedDay] = useState("monday");
+
+  const handleDayChange = (event) => {
+    setSelectedDay(event.target.value);
+  };
+
+  const handleInsertData = () => {
+    onUpdate(selectedDay);
+  };
+
   return (
     <div className="text-center">
       <span className="text-sm text-yellow-300">* API data emulator</span>
@@ -9,8 +20,10 @@ const Simulator = () => {
         <div className="dashboard-block">
           <select
             className="rounded-lg bg-gray-800 p-4"
-            name=""
+            name="select_day"
             id="select_day"
+            value={selectedDay}
+            onChange={handleDayChange}
           >
             <option value="monday">Monday</option>
             <option value="tuesday">Tuesday</option>
@@ -22,16 +35,12 @@ const Simulator = () => {
           </select>
         </div>
         <div className="dashboard-block">
-          <input
-            className="p-4 rounded-lg bg-gray-800 min-w-[340px]"
-            type="number"
-            name="people"
-            id="people"
-            placeholder="Insert number of people here from 0 to 100"
-          />
-        </div>
-        <div className="dashboard-block">
-          <button className="p-4 rounded-lg bg-gray-800">Insert data</button>
+          <button
+            className="p-4 rounded-lg bg-gray-800"
+            onClick={handleInsertData}
+          >
+            Generate Random Data
+          </button>
         </div>
       </div>
     </div>
