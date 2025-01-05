@@ -45,27 +45,25 @@ const Crowdmeter = () => {
             <h2 className="font-bold uppercase mb-10">daily crowd</h2>
             <div className="crowd-block">
               <div className="crowd-block-top w-full flex justify-around border-b-2 border-titleColor pb-3">
-                <span id="day-tab" onClick={() => handleDayClick("monday")}>
-                  MON
-                </span>
-                <span id="day-tab" onClick={() => handleDayClick("tuesday")}>
-                  TUE
-                </span>
-                <span id="day-tab" onClick={() => handleDayClick("wednesday")}>
-                  WED
-                </span>
-                <span id="day-tab" onClick={() => handleDayClick("thursday")}>
-                  THU
-                </span>
-                <span id="day-tab" onClick={() => handleDayClick("friday")}>
-                  FRI
-                </span>
-                <span id="day-tab" onClick={() => handleDayClick("saturday")}>
-                  SAT
-                </span>
-                <span id="day-tab" onClick={() => handleDayClick("sunday")}>
-                  SUN
-                </span>
+                {[
+                  "monday",
+                  "tuesday",
+                  "wednesday",
+                  "thursday",
+                  "friday",
+                  "saturday",
+                  "sunday",
+                ].map((day) => (
+                  <span
+                    key={day}
+                    className={`day-tab ${
+                      selectedDay === day ? "day-active" : ""
+                    }`}
+                    onClick={() => handleDayClick(day)}
+                  >
+                    {day.toUpperCase().slice(0, 3)}
+                  </span>
+                ))}
               </div>
               <div className="crowd-block-medium h-60 pt-5 pb-2 border-b-2 border-dashed border-titleColor flex justify-around items-end">
                 {/* percentages daily from data */}

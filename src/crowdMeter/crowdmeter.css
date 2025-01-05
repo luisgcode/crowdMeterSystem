@@ -1,5 +1,12 @@
 .day-active {
   background: #ec672d;
   padding: 0.1rem 0.5rem;
+  cursor: pointer;
   border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.day-tab {
+  cursor: pointer;
+  padding: 0.1rem 0.5rem;
 }
