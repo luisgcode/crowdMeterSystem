@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Crowdmeter.css";
 import Hours from "./components/Hours";
 import Schedulehours from "./data/Schedulehours";
@@ -6,15 +6,23 @@ import Percentage from "./components/Percentage";
 import Percentagedaily from "./data/Percentagedaily";
 
 const Crowdmeter = () => {
+  // Estado para almacenar el día seleccionado
+  const [selectedDay, setSelectedDay] = useState("monday");
+
+  // Función para manejar el clic en un día
+  const handleDayClick = (day) => {
+    setSelectedDay(day);
+  };
+
+  // Obtenemos los datos del día seleccionado
+  const percentages = Percentagedaily[selectedDay].map((item, index) => (
+    <Percentage key={index} hour={item.hour} height={item.ocu_percen} />
+  ));
+
   // Hours from data hours
   const hours = Schedulehours.map(function (item) {
     return <Hours day={item.day} hours={item.hours} />;
   });
-
-  // Percentage from data hours
-  const percentages = Percentagedaily.monday.map((item, index) => (
-    <Percentage key={index} height={item.ocu_percen} />
-  ));
 
   return (
     <div className="flex justify-center items-center   ">
@@ -37,13 +45,27 @@ const Crowdmeter = () => {
             <h2 className="font-bold uppercase mb-10">daily crowd</h2>
             <div className="crowd-block">
               <div className="crowd-block-top w-full flex justify-around border-b-2 border-titleColor pb-3">
-                <span className="day-tab">MON</span>
-                <span className="day-tab">TUE</span>
-                <span className="day-tab">WED</span>
-                <span className="day-tab">THU</span>
-                <span className="day-tab">FRI</span>
-                <span className="day-tab">SAT</span>
-                <span className="day-tab">SUN</span>
+                <span id="day-tab" onClick={() => handleDayClick("monday")}>
+                  MON
+                </span>
+                <span id="day-tab" onClick={() => handleDayClick("tuesday")}>
+                  TUE
+                </span>
+                <span id="day-tab" onClick={() => handleDayClick("wednesday")}>
+                  WED
+                </span>
+                <span id="day-tab" onClick={() => handleDayClick("thursday")}>
+                  THU
+                </span>
+                <span id="day-tab" onClick={() => handleDayClick("friday")}>
+                  FRI
+                </span>
+                <span id="day-tab" onClick={() => handleDayClick("saturday")}>
+                  SAT
+                </span>
+                <span id="day-tab" onClick={() => handleDayClick("sunday")}>
+                  SUN
+                </span>
               </div>
               <div className="crowd-block-medium h-60 pt-5 pb-2 border-b-2 border-dashed border-titleColor flex justify-around items-end">
                 {/* percentages daily from data */}
