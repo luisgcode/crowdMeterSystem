@@ -13,8 +13,7 @@ While the data is simulated to mimic real-world occupancy tracking, users will m
 ### Tech Stack (In Progress)
 
 - **Frontend**: React.js with Tailwind CSS
-- **Backend**: Python with Flask or FastAPI
-- **Database**: SQLite (for structured storage and easy access to data).
+- **Backend**: Json.
 - **Other Tools**: Git for version control
 
 ### Planned Features
