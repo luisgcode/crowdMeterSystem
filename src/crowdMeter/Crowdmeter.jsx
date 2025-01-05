@@ -39,6 +39,7 @@ const Crowdmeter = () => {
                 <span className="day-tab">SUN</span>
               </div>
               <div className="crowd-block-medium h-60 pt-5 pb-2 border-b-2 border-dashed border-titleColor flex justify-around items-end">
+                Bars will be data provided by a json data file
                 <span
                   className="bar-tab bg-gradient-to-t from-white to-titleColor w-8 rounded-t-lg rounded-b-md"
                   style={{
