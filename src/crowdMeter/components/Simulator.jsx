@@ -15,7 +15,7 @@ const Simulator = ({ onUpdate }) => {
 
   return (
     <div className="text-center">
-      <span className="text-sm text-yellow-300">* API data emulator</span>
+      <span className=" text-yellow-300">* API data emulator</span>
       <div className="dashboard flex align-center justify-center gap-10 mt-5">
         <div className="dashboard-block">
           <select
@@ -36,7 +36,7 @@ const Simulator = ({ onUpdate }) => {
         </div>
         <div className="dashboard-block">
           <button
-            className="p-4 rounded-lg bg-gray-800"
+            className="p-4 rounded-lg border-2 border-yellow-200 text-yellow-200"
             onClick={handleInsertData}
           >
             Generate Random Data

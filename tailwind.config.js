@@ -13,10 +13,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        darkBG: "#0a0519",
-        titleColor: "#ec672d",
-        barColor: "#cc932e(12,88%,95%)",
-        whiteColor: "#fffbee",
+        titleColor: "#37b24d",
       },
       width: {
         custom: "1360px",
